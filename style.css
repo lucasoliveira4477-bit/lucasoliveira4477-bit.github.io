@@ -1,0 +1,112 @@
+/* 1. Configurações Gerais */
+* {
+    box-sizing: border-box; /* Garante que padding não aumente o tamanho dos elementos */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. Cabeçalho e Menu */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Unifiquei suas regras de UL aqui para evitar repetição */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;          /* Ativa o flexbox para o gap funcionar */
+    justify-content: center; /* Centraliza os links */
+    gap: 40px;              /* O espaçamento que você queria */
+}
+
+nav ul li a {
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #181212; /* Um efeito visual simples para o seu menu */
+}
+
+/* 3. Conteúdo Principal */
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Faz o conteúdo esticar para empurrar o rodapé para baixo */
+}
+
+/* 4. Formulário Centralizado */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Legenda e botão alinhados à esquerda da caixa */
+    max-width: 600px;
+    margin: 40px auto;       /* Centraliza o bloco na tela */
+    width: 90%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;       /* Espaço entre a legenda e a caixa */
+    margin-bottom: 10px;    /* Espaço entre a caixa e o botão */
+    resize: vertical;       /* Permite aumentar altura, mas não largura */
+}
+
+/* 5. Rodapé */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    /* Removi o 'position: fixed' para ele não cobrir o seu texto em telas pequenas */
+}
+li{
+   list-style-type: none;
+
+}
+
+section {
+    margin: 20px 0;
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .item {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 10px;
+        flex: 1 1 300px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#profile{
+    width: 200px;
+    border-radius: 50%;
+}
+#Table-Experiências {
+    width: 100%;
+    text-align: center;
+}
